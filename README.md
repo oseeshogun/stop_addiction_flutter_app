@@ -1,6 +1,13 @@
-# stop_addiction
+# No Longer Slave
 
-A new Flutter project.
+A sobriety counter app
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="./Background.png" style="width: 20%" />
+    <img src="./SplashScreen.png" style="width: 20%" />
+    <img src="./No Date Set.png" style="width: 20%" />
+    <img src="./Home.png" style="width: 20%" />
+</div>
 
 ## Getting Started
 
