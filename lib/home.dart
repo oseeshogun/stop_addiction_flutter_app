@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
     // Configure BackgroundFetch.
     int status = await BackgroundFetch.configure(
         BackgroundFetchConfig(
-          minimumFetchInterval: 15,
+          minimumFetchInterval: 60,
           stopOnTerminate: false,
           enableHeadless: true,
           requiresBatteryNotLow: false,
@@ -93,7 +93,7 @@ class _HomeState extends State<Home> {
 
   int hours() {
     if (startedDay == null) return 0;
-    final date = startedDay!.subtract(Duration(days: days()));
+    final date = startedDay!.add(Duration(days: days()));
     return timeNow.difference(date).inHours;
   }
 
