@@ -99,7 +99,7 @@ class _HomeState extends State<Home> {
 
   int minutes() {
     if (startedDay == null) return 0;
-    final date = startedDay!.subtract(Duration(days: days(), hours: hours()));
+    final date = startedDay!.add(Duration(days: days(), hours: hours()));
     return timeNow.difference(date).inMinutes;
   }
 
