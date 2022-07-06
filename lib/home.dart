@@ -184,7 +184,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           const SizedBox(height: 10.0),
-                          if (hours() > 0)
+                          if (hours() > 0 || days() > 0)
                             Text(
                               "${hours()} heures",
                               style: const TextStyle(
